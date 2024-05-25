@@ -24,6 +24,6 @@ public class LaunchBatchJob {
     public void run()
             throws JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException,
             JobParametersInvalidException {
-        jobLauncher.run(job, new JobParametersBuilder().addString("test", "hello").toJobParameters());
+        jobLauncher.run(job, new JobParametersBuilder().toJobParameters());
     }
 }
