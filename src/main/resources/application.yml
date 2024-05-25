@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: demo-data-migration
+    batch:
+        jdbc:
+            initialize-schema: always
+        job:
+            enabled: true
+logging:
+    level:
+        batch: DEBUG
+        '[com.example.batch.demo_data_migration]': TRACE

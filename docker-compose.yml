@@ -2,8 +2,14 @@ services:
   db1:
     image: postgres
     environment:
+    #  default user and db is postgres
       POSTGRES_PASSWORD: 123
+    ports:
+      - 5432:5432
   db2:
     image: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: 123
+     # default user is root
+      MYSQL_ROOT_PASSWORD: password123
+    ports:
+      - 3306:3306
