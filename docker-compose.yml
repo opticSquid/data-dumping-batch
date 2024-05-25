@@ -1,0 +1,9 @@
+services:
+  db1:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: 123
+  db2:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
